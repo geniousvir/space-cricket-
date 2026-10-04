@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verify Cricket ID & Website Legitimacy - Safe Cricket Space</title>
+  <meta name="description" content="Submit any cricket platform URL, bookmaker domain, or WhatsApp agent number to verify its legitimacy before depositing your funds. Free 24/7 security scans.">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔍</text></svg>">
+
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style_custom.css">
+</head>
+<body>
+
+  <!-- Top Threat Radar Alert Bar -->
+  <div class="threat-radar-bar">
+    <div class="container threat-radar-content">
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <span class="radar-pulse-tag">
+          <span class="radar-dot"></span> AUDIT SYSTEM ONLINE
+        </span>
+        <span>Real-time intelligence database scanning 300+ bookmaker mirror domains.</span>
+      </div>
+      <div>
+        <a href="#whatsapp" class="radar-link wa-trigger" data-wa-action="verify">Instant WhatsApp Audit &rarr;</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="main-header">
+    <div class="container nav-container">
+      <div class="nav-left-group">
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open Left Taskbar" title="Open Pages Taskbar">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+
+        <a href="index.html" class="brand-wrapper">
+          <div class="brand-shield-icon" style="background: linear-gradient(135deg, #facc15 0%, #10b981 100%);">
+            <i class="fa-solid fa-shield-halved" style="color: #050811;"></i>
+          </div>
+          <div class="brand-meta">
+            <h2>SAFE CRICKET <span class="accent-space" style="color: #00f2fe;">SPACE</span></h2>
+            <p>AUTHENTICITY &bull; SECURITY &bull; SPEED</p>
+          </div>
+        </a>
+      </div>
+
+      <nav class="desktop-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="verify.html" class="nav-link active">Verify Website</a>
+        <a href="platforms.html" class="nav-link">Verified Websites</a>
+        <a href="blacklist.html" class="nav-link">Scam Alerts</a>
+        <a href="guide.html" class="nav-link">Safety Guide</a>
+        <a href="guide.html#hindiAwareness" class="nav-link" style="color: #facc15;"><i class="fa-solid fa-video"></i> हिन्दी फ्रॉड अलर्ट</a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="nav-btn-group">
+          <button class="nav-icon-btn" id="navSearchTrigger" title="Quick Search" onclick="document.getElementById('domainScanInput').focus()">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+
+          <a href="verify.html" class="btn-yellow btn-yellow-sm">
+            <span>Verify Now</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Left Taskbar / Drawer Menu -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <div class="brand-wrapper">
+        <div class="brand-shield-icon" style="width: 36px; height: 36px; font-size: 1.1rem; background: linear-gradient(135deg, #facc15, #10b981);">
+          <i class="fa-solid fa-shield-halved" style="color: #050811;"></i>
+        </div>
+        <div class="brand-meta">
+          <h3 style="font-size: 1.1rem; color: #fff;">SAFE CRICKET <span style="color: #00f2fe;">SPACE</span></h3>
+        </div>
+      </div>
+      <button id="closeDrawerBtn" style="background: none; color: #94a3b8; font-size: 1.5rem; border: none; cursor: pointer;">&times;</button>
+    </div>
+
+    <div class="drawer-taskbar-label">
+      <i class="fa-solid fa-compass"></i> WEBSITE PAGES
+    </div>
+
+    <div class="drawer-links">
+      <a href="index.html" class="drawer-link"><i class="fa-solid fa-house"></i> Home</a>
+      <a href="verify.html" class="drawer-link active"><i class="fa-solid fa-shield-virus"></i> Verify Website</a>
+      <a href="platforms.html" class="drawer-link"><i class="fa-solid fa-circle-check"></i> Verified Websites</a>
+      <a href="blacklist.html" class="drawer-link"><i class="fa-solid fa-triangle-exclamation"></i> Scam Alerts</a>
+      <a href="guide.html" class="drawer-link"><i class="fa-solid fa-book-shield"></i> Safety Guide</a>
+      <a href="guide.html#hindiAwareness" class="drawer-link drawer-link-hindi"><i class="fa-solid fa-video"></i> हिन्दी फ्रॉड अलर्ट</a>
+    </div>
+
+    <div style="margin-top: auto;">
+      <a href="#whatsapp" class="btn-yellow wa-trigger" data-wa-action="default" style="width: 100%; justify-content: center;">
+        <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp (24/7)
+      </a>
+    </div>
+  </div>
+
+  <!-- Page Header -->
+  <section style="padding: 70px 0 40px; text-align: center; position: relative;">
+    <div class="container">
+      <span class="badge badge-cyan" style="margin-bottom: 16px;">
+        <i class="fa-solid fa-fingerprint"></i> FORENSIC VERIFICATION DESK
+      </span>
+      <h1 style="font-size: 3rem; margin-bottom: 18px;">
+        Verify Your <span class="gradient-text-cyan">Cricket ID & Platform</span>
+      </h1>
+      <p style="color: var(--text-muted); font-size: 1.15rem; max-width: 680px; margin: 0 auto;">
+        Before you deposit single rupee, check if your cricket exchange domain or agent is authentic, licensed, and proven to honor instant withdrawals.
+      </p>
+    </div>
+  </section>
+
+  <!-- Interactive Scanner Section -->
+  <section style="padding: 20px 0 70px;">
+    <div class="container">
+      <div class="scanner-widget-card">
+        <div class="scanner-top-chip">
+          <i class="fa-solid fa-satellite-dish"></i> INSTANT CLONE DETECTION
+        </div>
+
+        <div style="text-align: center; margin-bottom: 25px;">
+          <h3 style="font-size: 1.8rem;">Enter Platform Name or Domain</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem;">
+            Our algorithm cross-checks global WHOIS registries, sovereign gaming databases, and active scam clone reports.
+          </p>
+        </div>
+
+        <div class="scanner-input-wrapper">
+          <input type="text" id="domainScanInput" class="scanner-text-input" placeholder="e.g., Laser247, ReddyAnna, SkyExchange, Lotus365...">
+          <button id="domainScanBtn" class="btn-scan-action">
+            <i class="fa-solid fa-bolt"></i> Run Security Scan
+          </button>
+        </div>
+
+        <div class="quick-scan-pills">
+          <span>Frequently Scanned:</span>
+          <span class="quick-pill" data-site="Laser247">Laser247</span>
+          <span class="quick-pill" data-site="SkyExchange">SkyExchange</span>
+          <span class="quick-pill" data-site="ReddyAnna">ReddyAnna</span>
+          <span class="quick-pill" data-site="Tiger247">Tiger247</span>
+          <span class="quick-pill" data-site="Diamond247">Diamond247</span>
+        </div>
+
+        <div id="scanOutput" class="scan-output-box"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5-Point Security Audit Framework -->
+  <section class="section-wrapper" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header-center">
+        <span class="badge badge-gold">
+          <i class="fa-solid fa-list-check"></i> RIGOROUS AUDIT PROTOCOL
+        </span>
+        <h2 class="section-heading">Our 5-Point Platform Authentication Checklist</h2>
+        <p class="section-subtext">
+          Every platform vetted by Safe Cricket Space must pass five stringent forensic hurdles before we endorse their links to players:
+        </p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px;">
+        <div class="pillar-box">
+          <div style="color: var(--cyan-neon); font-size: 2rem; margin-bottom: 16px;"><i class="fa-solid fa-lock"></i></div>
+          <h3>1. 256-Bit SSL & Domain Age</h3>
+          <p>We analyze WHOIS records. Clone websites are typically less than 90 days old and registered anonymously to evade law enforcement.</p>
+        </div>
+
+        <div class="pillar-box">
+          <div style="color: var(--emerald-main); font-size: 2rem; margin-bottom: 16px;"><i class="fa-solid fa-money-bill-transfer"></i></div>
+          <h3>2. Live Payout Stress Testing</h3>
+          <p>We perform live deposit and withdrawal stress tests to verify whether the bookmaker clears payouts within the advertised 5 to 15-minute timeframe.</p>
+        </div>
+
+        <div class="pillar-box">
+          <div style="color: var(--gold-accent); font-size: 2rem; margin-bottom: 16px;"><i class="fa-solid fa-passport"></i></div>
+          <h3>3. Official Gaming License</h3>
+          <p>We verify backend certifications from established international gaming commissions (e.g., Curacao eGaming, MGA) to ensure fair algorithm odds.</p>
+        </div>
+
+        <div class="pillar-box">
+          <div style="color: var(--danger-coral); font-size: 2rem; margin-bottom: 16px;"><i class="fa-solid fa-network-wired"></i></div>
+          <h3>4. Phishing Clone Blacklist Matching</h3>
+          <p>We cross-reference the URL with over 1,200 active mirror clones and rogue Telegram syndicates operating across India.</p>
+        </div>
+
+        <div class="pillar-box">
+          <div style="color: var(--wa-green); font-size: 2rem; margin-bottom: 16px;"><i class="fa-solid fa-headset"></i></div>
+          <h3>5. 24/7 Human Helpdesk Verification</h3>
+          <p>Authentic exchanges maintain real human support with dispute escalation paths, unlike scammers who operate ghost automated bots.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Request Manual WhatsApp Audit Form Section -->
+  <section class="section-wrapper">
+    <div class="container">
+      <div style="max-width: 800px; margin: 0 auto; background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 45px; box-shadow: var(--shadow-card);">
+        <div style="text-align: center; margin-bottom: 30px;">
+          <span class="badge badge-verified" style="margin-bottom: 12px;">
+            <i class="fa-solid fa-user-shield"></i> MANUAL EXPERT REVIEW
+          </span>
+          <h2 style="font-size: 2.2rem; margin-bottom: 10px;">Request a Direct Forensic WhatsApp Audit</h2>
+          <p style="color: var(--text-muted); font-size: 0.95rem;">
+            Have a suspicious link, telegram channel, or WhatsApp agent you want checked? Fill the details below to launch an instant audit chat with our specialists.
+          </p>
+        </div>
+
+        <form id="manualAuditForm" onsubmit="event.preventDefault(); submitManualAudit();">
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-bottom: 18px;">
+            <div>
+              <label style="display: block; font-size: 0.85rem; font-weight: 700; margin-bottom: 6px;">Platform or Bookmaker Name:</label>
+              <input type="text" id="auditSiteName" class="scanner-text-input" style="width: 100%;" placeholder="e.g. Laser247 / ReddyAnna" required>
+            </div>
+            <div>
+              <label style="display: block; font-size: 0.85rem; font-weight: 700; margin-bottom: 6px;">Website Link / URL (if known):</label>
+              <input type="text" id="auditSiteUrl" class="scanner-text-input" style="width: 100%;" placeholder="e.g. https://example-bet.com">
+            </div>
+          </div>
+
+          <div style="margin-bottom: 24px;">
+            <label style="display: block; font-size: 0.85rem; font-weight: 700; margin-bottom: 6px;">Agent WhatsApp / Telegram Handle or Issue Details:</label>
+            <textarea id="auditDetails" class="scanner-text-input" style="width: 100%; height: 95px; resize: none;" placeholder="Provide any phone numbers, telegram links, or payout issues you encountered..."></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary-wa pulse-wa-glow" style="width: 100%; padding: 16px; font-size: 1.1rem;">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>Send Details to WhatsApp for Free 60-Second Audit</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="conversion-banner-wrap" id="whatsapp">
+    <div class="container">
+      <div class="conversion-card">
+        <h2 class="conversion-title">Never Deposit on an Unverified Cricket ID</h2>
+        <p class="conversion-desc">
+          A 60-second WhatsApp check can save you from losing thousands of rupees. Our security team is online right now.
+        </p>
+        <button class="btn-primary-wa wa-trigger" data-wa-action="verify" style="font-size: 1.2rem; padding: 18px 45px;">
+          <i class="fa-brands fa-whatsapp"></i> Chat with Security Specialist on WhatsApp
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid-layout">
+        <div class="footer-col">
+          <div class="brand-wrapper" style="margin-bottom: 18px;">
+            <div class="brand-shield-icon">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <div class="brand-meta">
+              <h2>SAFE CRICKET <span class="accent-space">SPACE</span></h2>
+              <p>AUTHENTICITY &bull; SECURITY &bull; SPEED</p>
+            </div>
+          </div>
+          <p style="max-width: 360px; line-height: 1.7; margin-bottom: 20px;">
+            India's foremost independent gaming security and cricket ID verification network.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Platform Portals</h4>
+          <div class="footer-links-list">
+            <a href="index.html">Home Dashboard</a>
+            <a href="verify.html">Verify Any Cricket ID</a>
+            <a href="platforms.html">Verified Exchanges</a>
+            <a href="blacklist.html">Scam Blacklist Directory</a>
+            <a href="guide.html">Player Protection Guide</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Security Hub</h4>
+          <div class="footer-links-list">
+            <a href="verify.html">Instant Domain Scanner</a>
+            <a href="blacklist.html#report">Report a Scammer Site</a>
+            <a href="guide.html#rules">7 Golden Safety Rules</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>24/7 Verified Support</h4>
+          <p style="margin-bottom: 8px;">Direct WhatsApp: <strong style="color: var(--wa-green);">+91 98765 43210</strong></p>
+          <p style="margin-bottom: 8px;">Response Window: <strong>Under 45 Seconds</strong></p>
+          <p style="color: #86efac; font-size: 0.85rem;"><i class="fa-solid fa-circle-check"></i> Security Team Active Right Now</p>
+        </div>
+      </div>
+
+      <div class="footer-compliance-note">
+        <p>&copy; 2026 Safe Cricket Space. All Rights Reserved. Strictly 18+ only. Play responsibly.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Pill Button -->
+  <div class="floating-wa-anchor wa-trigger" data-wa-action="verify" title="Instant ID Verification on WhatsApp">
+    <div class="floating-wa-btn">
+      <i class="fa-brands fa-whatsapp"></i>
+      <span class="floating-unread-dot">1</span>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MOBILE APP BOTTOM NAVIGATION BAR
+       ========================================================================== -->
+  <div class="mobile-app-bottom-bar">
+    <div class="mobile-nav-items-row">
+      <a href="index.html" class="mobile-nav-item">
+        <i class="fa-solid fa-house"></i>
+        <span>Home</span>
+      </a>
+      <a href="verify.html" class="mobile-nav-item active highlight-verify">
+        <i class="fa-solid fa-shield-virus"></i>
+        <span>Verify</span>
+      </a>
+      <a href="platforms.html" class="mobile-nav-item">
+        <i class="fa-solid fa-circle-check"></i>
+        <span>Platforms</span>
+      </a>
+      <a href="blacklist.html" class="mobile-nav-item">
+        <i class="fa-solid fa-bell"></i>
+        <span>Alerts</span>
+      </a>
+      <a href="guide.html" class="mobile-nav-item">
+        <i class="fa-solid fa-book-shield"></i>
+        <span>Guide</span>
+      </a>
+      <a href="#whatsapp" class="mobile-nav-item wa-trigger" style="color: #25D366;">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span>WhatsApp</span>
+      </a>
+    </div>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+  <script>
+    function submitManualAudit() {
+      const site = document.getElementById('auditSiteName').value.trim();
+      const url = document.getElementById('auditSiteUrl').value.trim();
+      const details = document.getElementById('auditDetails').value.trim();
+
+      let msg = `Hello Safe Cricket Space Team! I want to verify a cricket platform:\n\n*Platform Name:* ${site}`;
+      if (url) msg += `\n*Website URL:* ${url}`;
+      if (details) msg += `\n*Details/Agent:* ${details}`;
+      msg += `\n\nPlease conduct a forensic check and confirm if this is genuine or a fake clone.`;
+
+      openWhatsApp(msg);
+    }
+  </script>
+</body>
+</html>
